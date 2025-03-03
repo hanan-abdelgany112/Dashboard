@@ -1,0 +1,29 @@
+
+body { font-family: 'Tajawal', sans-serif; background-color: #f8f9fa; }
+.sidebar { height: 100vh; background: #ffffff; border-right: 1px solid #ddd; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar ul li { padding: 10px; border-bottom: 1px solid #eee; cursor: pointer; }
+.sidebar ul li:hover, .sidebar ul li.active { background: #f0f0f0; }
+.content { padding: 20px; }
+.header { background: #eee; padding: 10px; text-align: center; font-size: 20px; }
+.card { padding: 15px; margin-bottom: 10px; }
+.data-label { font-weight: bold; }
+.data-value { color: #007bff; }
+.form-container { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar ul li {
+    cursor: pointer;
+    padding: 5px;
+}
+.nested {
+    display: none;
+    padding-right: 15px;
+}
+.sidebar ul li:hover > .nested {
+    display: block;
+}
