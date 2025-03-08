@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,700,800,900" rel="stylesheet" />
+    <link href="../../dist-assets/css/themes/lite-purple.min.css" rel="stylesheet" />
+    <link href="../../dist-assets/css/plugins/perfect-scrollbar.min.css" rel="stylesheet" />
+    <link href="../dist-assets/css/form4.css" rel="stylesheet"/>
+</head>
+
+<body class="text-left">
+    <div class="app-admin-wrap layout-sidebar-large">
+        <div class="main-header">
+            
+            <div class="logo">
+                <img src="../../dist-assets/images/logo.png" alt="">
+            </div>
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="d-flex align-items-center">
+
+
+                <!-- / Mega menu -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <i class="search-icon text-muted i-Magnifi-Glass1"></i>
+                </div>
+            </div>
+            <div style="margin: auto"></div>
+            <div class="header-part-right">
+
+                <!-- Full screen toggle -->
+                <i class="i-Full-Screen header-icon d-none d-sm-inline-block" data-fullscreen></i>
+
+                <!-- User  dropdown -->
+                <div class="dropdown">
+                    <div class="user col align-self-end">
+                        <img src="../../dist-assets/images/faces/1.jpg" id="userDropdown" alt="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <div class="dropdown-header">
+                                <i class="i-Lock-User mr-1"></i> Timothy Carlson
+                            </div>
+                            <a class="dropdown-item">Account settings</a>
+                            <a class="dropdown-item">Billing history</a>
+                            <a class="dropdown-item" href="signin.html">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-content-wrap">
+            <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
+                <ul class="navigation-left">
+                    
+                    <li class="nav-item" data-item="charts"><a class="nav-item-hold" href="../layout1-rtl/blank.html"><i class="nav-icon i-File-Clipboard-File--Text"></i><span class="nav-text">إدارة الحسابات</span></a>
+                        <div class="triangle">
+
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item" data-item="charts"><a class="nav-item-hold" href="../layout1-rtl/bage3.html"><i class="nav-icon i-File-Clipboard-File--Text"></i><span class="nav-text"> القروض اليومية</span></a>
+                        <div class="triangle">
+
+                        </div>
+                    </li>
+
+                    <li class="nav-item" data-item="charts"><a class="nav-item-hold" href="..//layout1-rtl/bage4.html"><i class="nav-icon i-File-Clipboard-File--Text"></i><span class="nav-text"> القروض الدورية</span></a>
+                        <div class="triangle">
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+            
+
+            <div class="sidebar-overlay">
+            </div>  
+        </div>
+
+        <div class="main-content-wrap sidenav-open d-flex flex-column">
+            <!-- ============ Body content start ============= -->
+            <div class="main-content">
+                <div class="border-top mb-3"></div>
+                <div class="row">   
+                   
+                    <div class="container">
+                        <div class="col-md-9 col-lg-10 form-container p-4">
+                           <div class="mb-3 ">
+                               <button class="btn btn-success new-btn">➕ جديد</button>
+                               <button class="btn btn-primary edit-btn">🔄 تعديل</button>
+                               <button class="btn btn-secondary exit-btn">🔙 خروج</button>
+                           </div>
+                   
+                           <div class="box">
+                               <div class="row g-2">
+                                <div class="col-md-3">
+                                    <label class="form-label">رقم:</label>
+                                    <input type="text" class="form-control" value="1">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">اسم القيد:</label>
+                                    <input type="text" class="form-control" value="الأجل">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="form-label">اسم الشركة:</label>
+                                    <select class="form-select">
+                                        <option>TABIBSOFT GROUP</option>
+                                    </select>
+                                </div>
+                                   <div class="col-md-3">
+                                       <label class="form-label">اسم الفرع:</label>
+                                       <select class="form-select">
+                                           <option>soft</option>
+                                       </select>
+                                   </div>
+                                  
+                                   <div class="col-md-3">
+                                    <label class="form-label">الوصف:</label>
+                                    <textarea class="form-control" rows="3" placeholder="اكتب الوصف هنا..."></textarea>
+                                </div> 
+                                <div class="col-md-3">
+                                    <label class="form-label">إجمالي مدين:</label>
+                                    <input type="text" class="form-control" value="100" readonly>
+                                </div>
+                                   <div class="col-md-3">
+                                       <label class="form-label">إجمالي دائن:</label>
+                                       <input type="text" class="form-control" value="100" readonly>
+                                   </div>                                  
+                                   <div class="col-md-3">
+                                       <label class="form-label">الفرق:</label>
+                                       <input type="text" class="form-control" value="0">
+                                   </div>
+                               </div>
+                           </div>
+                   
+                           <div class="table-container">
+                               <table class="table mt-3 table-bordered text-center ">
+                                   <thead class="table-primary">
+                                       <tr>
+                                           <th>حذف</th>
+                                           <th>م</th>
+                                           <th>اسم الحساب</th>
+                                           <th>مدين</th>
+                                           <th>دائن</th>
+                                           <th>الوصف</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <td><button class="btn btn-danger btn-icon">✖</button></td>
+                                           <td>1</td>
+                                           <td>
+                                                   <select class="form-control">
+                                                       <option value="الأصول المتداولة:11:2">خزينة طنطا▾ </option>
+                                                       <option value="المخزون">خزينة القاهرة▾</option>
+                                                       <option value="؟أوراق القبض">خزينة طنطا▾ </option>
+                                                       <option value="ترخيص ملفات المنتجات">خزينة طنطا▾ </option>
+                                                   </select>
+                                           </td>
+                                           <td><input type="text" class="form-control" value="100"></td>
+                                           <td><input type="text" class="form-control" value="0"></td>
+                                           <td><input type="text" class="form-control" value="بيانات"></td>
+                                       </tr>
+                                       <tr>
+                                           <td><button class="btn btn-danger btn-icon">✖</button></td>
+                                           <td>2</td>
+                                           <td>
+                                               <select class="form-control">
+                                                   <option value="الأصول المتداولة:11:2"> عهدة حسام كمال▾ </option>
+                                                   <option value="المخزون">عهدة محمد▾</option>
+                                                   <option value="؟أوراق القبض">عهدة احمد▾ </option>
+                                               </select>
+                                           </td>
+                                           <td><input type="text" class="form-control" value="0"></td>
+                                           <td><input type="text" class="form-control" value="100"></td>
+                                           <td><input type="text" class="form-control" value="بيانات"></td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+                               <button class="btn btn-primary btn-icon add-btn">➕</button>
+                           </div>
+                        </div>
+                       </div>
+
+                </div>
+            <!-- end of main-content -->
+           
+        </div>
+
+        
+    </div><!-- ============ Search ============= -->
+    <div class="search-ui">
+        <div class="search-header">
+            <img src="../../dist-assets/images/logo.png" alt="" class="logo">
+            <button class="search-close btn btn-icon bg-transparent float-right mt-2">
+                <i class="i-Close-Window text-22 text-muted"></i>
+            </button>
+        </div>
+        <input type="text" placeholder="Type here" class="search-input" autofocus>
+        <div class="search-title">
+            <span class="text-muted">Search results</span>
+        </div>
+
+
+    </div>
+   
+    <!-- ============ Search UI End ============= -->
+    <script src="../../dist-assets/js/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../../dist-assets/js/plugins/bootstrap.bundle.min.js"></script>
+    <script src="../../dist-assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../../dist-assets/js/scripts/script.min.js"></script>
+    <script src="../../dist-assets/js/scripts/sidebar.large.script.min.js"></script>
+</body>
+
+</html>
