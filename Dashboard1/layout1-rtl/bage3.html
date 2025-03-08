@@ -100,49 +100,87 @@
                         <div class="col-md-9 col-lg-10 form-container p-4">
                            <div class="mb-3 ">
                                <button class="btn btn-success new-btn">➕ جديد</button>
-                               <button class="btn btn-primary edit-btn">🔄 تعديل</button>
                                <button class="btn btn-secondary exit-btn">🔙 خروج</button>
                            </div>
                    
                            <div class="box">
                                <div class="row g-2">
-                                <div class="col-md-3">
-                                    <label class="form-label">رقم:</label>
-                                    <input type="text" class="form-control" value="1">
-                                </div>
-                                <div class="col-md-3">
-                                    <label class="form-label">اسم القيد:</label>
-                                    <input type="text" class="form-control" value="الايجار">
-                                </div>
-                                <div class="col-md-3">
-                                    <label class="form-label">اسم الشركة:</label>
-                                    <select class="form-control">
-                                        <option>TABIBSOFT GROUP</option>
-                                    </select>
-                                </div>
                                    <div class="col-md-3">
-                                       <label class="form-label">اسم الفرع:</label>
+                                       <label class="form-label">رقم:</label>
+                                       <input type="text" class="form-control" value="1">
+                                   </div>
+                                   <div class="col-md-3">
+                                       <label class="form-label">نوع القيد:</label>
                                        <select class="form-control">
-                                           <option>soft</option>
+                                           <option>قيد يومي</option>
+                                           <option>قيد اسبوعي</option>
+                                           <option>قيد شهري</option>
+                                           <option>قيد سنوي</option>
                                        </select>
                                    </div>
-
                                    <div class="col-md-3">
-                                    <label class="form-label">الوصف:</label>
-                                    <textarea class="form-control" rows="3" placeholder="اكتب الوصف هنا..."></textarea>
-                                </div> 
-                                <div class="col-md-3">
-                                    <label class="form-label">إجمالي مدين:</label>
-                                    <input type="text" class="form-control" value="100" readonly>
-                                </div>
-                                   <div class="col-md-3">
-                                       <label class="form-label">إجمالي دائن:</label>
-                                       <input type="text" class="form-control" value="100" readonly>
-                                   </div>                                  
-                                   <div class="col-md-3">
-                                       <label class="form-label">الفرق:</label>
-                                       <input type="text" class="form-control" value="0">
+                                       <label class="form-label">اسم الشركة:</label>
+                                       <select class="form-control">
+                                           <option>TABIBSOFT GROUP</option>
+                                       </select>
                                    </div>
+                                      <div class="col-md-3">
+                                          <label class="form-label">اسم الفرع:</label>
+                                          <select class="form-control">
+                                              <option>soft</option>
+                                          </select>
+                                      </div>
+                                 
+                                      
+                                      <div class="col-md-3">
+                                       <label class="form-label">المصدر :</label>
+                                       <select class="form-control">
+                                           <option>  يومي عامة ;1</option>
+                                           <option> اسبوعي</option>
+                                           <option> شهري</option>
+                                           <option> سنوي</option>
+                                       </select>
+                                   </div>
+                                   <div class="col-md-3">
+                                       <label class="form-label"> رقم المستند الدفتري:</label>
+                                       <input type="text" class="form-control" value="1">
+                                   </div>
+                                   <div class="col-md-3">
+                                       <label class="form-label">التاريخ:</label>
+                                       <input type="date" class="form-control" value="2022-01-01">
+                                   </div>
+                                   <div class="col-md-3">
+                                       <label class="form-label"> رقم المستند :</label>
+                                       <input type="text" class="form-control">
+                                   </div>
+                   
+                   
+                                      <div class="col-md-2">
+                                       <label class="form-label">الوصف:</label>
+                                       <textarea class="form-control" rows="3" placeholder="اكتب الوصف هنا..."></textarea>
+                                   </div> 
+                                   <div class="col-md-2">
+                                       <label class="form-label">المصدر :</label>
+                                       <select class="form-control">
+                                           <option>   معتمد</option>
+                                           <option> اسبوعي</option>
+                                           <option> شهري</option>
+                                           <option> سنوي</option>
+                                       </select>
+                                   </div>
+                   
+                                   <div class="col-md-2">
+                                       <label class="form-label">إجمالي مدين:</label>
+                                       <input type="text" class="form-control" value="100" readonly>
+                                   </div>
+                                      <div class="col-md-2">
+                                          <label class="form-label">إجمالي دائن:</label>
+                                          <input type="text" class="form-control" value="100" readonly>
+                                      </div>                                  
+                                      <div class="col-md-2">
+                                          <label class="form-label">الفرق:</label>
+                                          <input type="text" class="form-control" value="0">
+                                      </div>
                                </div>
                            </div>
                    
@@ -186,6 +224,36 @@
                                            </td>
                                            <td><input type="text" class="form-control" value="0"></td>
                                            <td><input type="text" class="form-control" value="100"></td>
+                                           <td><input type="text" class="form-control" value="بيانات"></td>
+                                       </tr>
+                                       <tr>
+                                           <td><button class="btn btn-danger btn-icon">✖</button></td>
+                                           <td>1</td>
+                                           <td>
+                                                   <select class="form-control">
+                                                       <option value="الأصول المتداولة:11:2">خزينة طنطا▾ </option>
+                                                       <option value="المخزون">خزينة القاهرة▾</option>
+                                                       <option value="؟أوراق القبض">خزينة طنطا▾ </option>
+                                                       <option value="ترخيص ملفات المنتجات">خزينة طنطا▾ </option>
+                                                   </select>
+                                           </td>
+                                           <td><input type="text" class="form-control" value="100"></td>
+                                           <td><input type="text" class="form-control" value="0"></td>
+                                           <td><input type="text" class="form-control" value="بيانات"></td>
+                                       </tr>
+                                       <tr>
+                                           <td><button class="btn btn-danger btn-icon">✖</button></td>
+                                           <td>1</td>
+                                           <td>
+                                                   <select class="form-control">
+                                                       <option value="الأصول المتداولة:11:2">خزينة طنطا▾ </option>
+                                                       <option value="المخزون">خزينة القاهرة▾</option>
+                                                       <option value="؟أوراق القبض">خزينة طنطا▾ </option>
+                                                       <option value="ترخيص ملفات المنتجات">خزينة طنطا▾ </option>
+                                                   </select>
+                                           </td>
+                                           <td><input type="text" class="form-control" value="100"></td>
+                                           <td><input type="text" class="form-control" value="0"></td>
                                            <td><input type="text" class="form-control" value="بيانات"></td>
                                        </tr>
                                    </tbody>
